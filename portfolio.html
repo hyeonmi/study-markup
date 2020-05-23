@@ -5,6 +5,362 @@
         <link rel="stylesheet" href="./css/portfolio.css">
         <title>포트폴리오</title>
     </head>
-    <body>    
+    <body>
+        <h1>구성요소</h1>
+        <section>
+            <article>
+                <h2>테이블 요소</h2>
+                <table>
+                    <caption>아동 사이즈</caption>
+                    <colgroup>
+                        <col span="5">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">구분</th>
+                            <th colspan="2">Small</th>
+                            <th colspan="2">Medium</th>
+                            <th colspan="2">Large</th>
+                            <th>X-Large</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                미국남아<br>
+                                [Boys 2-7]
+                            </td>
+                            <td>사이즈</td>
+                            <td>2T</td>
+                            <td>3T</td>
+                            <td>4T</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>키</td>
+                            <td>84-91</td>
+                            <td>91-99</td>
+                            <td>91-99</td>
+                            <td>997-107</td>
+                            <td>107-114</td>
+                            <td>114-122</td>
+                            <td>122-130</td>
+                        </tr>
+                        <tr>
+                            <td>몸무게</td>
+                            <td>13-15</td>
+                            <td>14-15</td>
+                            <td>13-15</td>
+                            <td>14-15</td>
+                            <td>19-21</td>
+                            <td>20-23</td>
+                            <td>23-25</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                미국 여아<br>
+                                [Girls 2-6X]
+                            </td>
+                            <td>사이즈</td>
+                            <td>2T</td>
+                            <td>3T</td>
+                            <td>4T</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>6x</td>
+                        </tr>
+                        <tr>
+                            <td>키</td>
+                            <td>84-91</td>
+                            <td>91-99</td>
+                            <td>91-99</td>
+                            <td>997-107</td>
+                            <td>107-114</td>
+                            <td>114-122</td>
+                            <td>122-130</td>
+                        </tr>
+                        <tr>
+                            <td>몸무게</td>
+                            <td>13-15</td>
+                            <td>14-15</td>
+                            <td>13-15</td>
+                            <td>14-15</td>
+                            <td>19-21</td>
+                            <td>20-23</td>
+                            <td>23-25</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <table>
+                    <caption>환불 가능 금액 조회</caption>
+                    <colgroup>
+                        <col span="">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>환불가능금액</th>
+                            <th>수수료</th>
+                            <th>총 환불금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>게임 보상금액</td>
+                            <td>100,000원</td>
+                            <td>1,000원</td>
+                            <td>99,000원</td>
+                        </tr>
+                        <tr>
+                            <td>월정액제 보상금액</td>
+                            <td>10,000원</td>
+                            <td>5,000원</td>
+                            <td>5,000원</td>
+                        </tr>
+                        <tr>
+                            <td>코인</td>
+                            <td>9,000원</td>
+                            <td>500원</td>
+                            <td>8,500원</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>총합계</td>
+                            <td>119,000원</td>
+                            <td>6,500원</td>
+                            <td>112,500원</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <h2>폼요소</h2>
+                <h3>회원가입</h3>
+                <form action="">
+                    <label for="user-id">아이디</label>
+                    <input id="user-id" type="text">
+                    
+                    <label for="password">비밀번호</label>
+                    <input id="password" type="password">
+                    
+                    <label for="user-name">이름</label>
+                    <input id="user-name" type="text">
+                    
+                    <label for="birthday-year">생년월일</label>
+                    <select id="birthday-year">
+                        <option selected>년도</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <select>
+                        <option selected>월</option>
+                        <option value="2020">1</option>
+                    </select>
+                    <select>
+                        <option selected>일</option>
+                        <option value="2020">1</option>
+                    </select>
+                    
+                    <h4>성별</h4>
+                    <ul>
+                        <li>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">남성</label>        
+                        </li>
+                        <li>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">여성</label>        
+                        </li>
+                    </ul>
+
+                    <label for="email">이메일</label>
+                    <input type="text" id="email" placeholder="이메일 주소에'@'를 포함해주세요'">
+
+                    <label for="mobile-number">휴대전화</label>
+                    <input type="number" id="mobile-number" placeholder="숫자만 입력해주세요.">
+                    <button>인증번호 받기</button>
+                    <input type="number" placeholder="인증번호를 입력해주세요.">
+
+                    <h4>취미</h4>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="hobby1" name="hobby" value="운동">
+                            <label for="hobby1">운동</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby2" name="hobby" value="요리">
+                            <label for="hobby2">요리</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby3" name="hobby" value="여행">
+                            <label for="hobby3">여행</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby4" name="hobby" value="게임">
+                            <label for="hobby4">게임</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby5" name="hobby" value="컴퓨터">
+                            <label for="hobby5">컴퓨터</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby6" name="hobby" value="음악">
+                            <label for="hobby6">음악</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby7" name="hobby" value="영화">
+                            <label for="hobby7">영화</label>        
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hobby8" name="hobby" value="독서">
+                            <label for="hobby8">독서</label>        
+                        </li>
+                    </ul>
+
+                    <h4>가입인사</h4>
+                    <textarea></textarea>
+                    <button type="submit">가입하기</button>
+                </form>
+            </article>
+
+            <article>
+                <h2>리스트 요소</h2>
+                <h3>'프로젝트'사전 검색 결과</h3>
+                <article>
+                    <h4>프로젝트</h4>
+                    <dl>
+                        <dt>프로젝트<em>영양학사전</em></dt>
+                        <dd>
+                            연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획. 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는 특정한 목표, 계획을 위한 학습
+활동, 실행계획 등을 가리킨다.
+                        </dd>
+                        <dt>
+                            프로젝트<em>Basic 중학생을 위한 기술, 가정 용어사전</em>
+                        </dt>
+                        <dd>
+                            어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업.
+                        </dd>
+                    </dl>
+                </article>
+
+                <h3>실시간 검색어</h3>
+                <ol>
+                    <li>
+                        <strong>1</strong><span>입추</span>
+                    </li>
+                    <li>
+                        <strong>2</strong><span>런닝맨 유재석</span>
+                    </li>
+                    <li>
+                        <strong>9</strong><span>한국사 능력검정시험</span>
+                    </li>
+                    <li>
+                        <strong>10</strong><span>맛있는 녀석들</span>
+                    </li>
+                </ol>
+
+                <h3>쿠키 이용안내</h3>
+                <ul>
+                    <li>
+                        <em>웹툰 작품</em>은 쿠키를 사용하여 대여/구매 하실 수 있습니다.
+                    </li>
+                    <li>
+                        쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <strong>유효기간은 지급 후 90일</strong>입니다.
+                    </li>
+                    <li>
+                        구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <a>구매내역</a>에서 직접 구매 취소할 수 있습니다.
+                    </li>
+                    <li>
+                        일부 사용 후 잔여 쿠키에 대한 구매 취소는 고객센터를 통해 가능하며, 쿠키 구매 시 지급된 보너스 쿠키를 사용한 경우에는 해당 분량을 제외하고 환불됩니다.
+                    </li>
+                    <li>
+                        쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.
+                        <a>쿠키 이용약관</a>
+                    </li>
+                </ul>
+
+                <h3>뉴스</h3>
+                <ul>
+                    <li>
+                        <a href=""><img src="https://via.placeholder.com/80" alt="대체 텍스트"></a>
+                        <a href="">[날씨] 내일도 35도 안팎 폭염・내륙 소나기⋯습도 높아 후텁지근</a>
+                        <p>
+                            오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요. 동해안을 제외한
+                            전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에 서울과 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다. 내일도 대기가 불안정해지
+                            면서 오후에 내륙에는 소나기가 지나는 곳이 있겠습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="">[펫카드] 강아지 중성화가 필요한 이유</a>
+                        <p>
+                            (서울=뉴스1) 최서윤 기자,방은영 디자이너 = 강아지 중성화 수술을 놓고 찬반이 팽팽하게 엇갈린다. 많은 사람들은 사람들과 공존하려면 개체수 조절을 위해 필요하다고 주장한
+                            다. 그러나 어떤 사람들은 인위적인 수술은 안된다며 반대한다.
+                        </p>
+                    </li>
+                    <li>
+                        <a href=""><img src="https://via.placeholder.com/80" alt="대체 텍스트"></a>
+                        <a href="">다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어</a>
+                        <p>
+                            복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당, 수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.
+                            5% 정도로 적게 들어 단맛이 강하다. 복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다. 포만감에 비해 열량이 적은 편이어서 다이어트를
+                            하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다.
+                        </p>
+                    </li>
+                </ul>
+
+                <h3>웹툰</h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p>하루 3컷</p>    
+                        </a>
+                        <p>17화 편리하게 피곤하게</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p><em>컷툰</em>유미의 세포들</p>    
+                        </a>
+                        <p>326화 미래에서 온 텔레파시</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p>이말년씨리즈 2018</p>    
+                        </a>
+                        <p>28화 공포의 떡볶이</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p><em>스마트툰</em>하루 3컷</p>    
+                        </a>
+                        <p>17화 편리하게 피곤하게</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p><em>컷툰</em>유미의 세포들</p>    
+                        </a>
+                        <p>326화 미래에서 온 텔레파시</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://via.placeholder.com/285x140" alt="대체 텍스트">
+                            <p>이말년씨리즈 2018</p>    
+                        </a>
+                        <p>28화 공포의 떡볶이</p>
+                    </li>
+
+                </ul>
+            </article>
+        </section>
     </body>
 </html>
