@@ -121,18 +121,17 @@ table.normal {
 }
 
 table.normal thead {
-	font-weight: bold;
 	background-color: #fbfbfb;
+}
+
+table.normal th {
+	font-weight: bold;
 }
 
 table.normal th, table.normal td {
 	border: 1px solid #e4e4e4;
 	padding: 10px;
 	vertical-align: middle;
-}
-
-table.normal td em {
-	font-weight: bold;
 }
 
 table.line thead {
