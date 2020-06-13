@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 /** reset end **/
+
 .wrap {
 	margin: 10px 50px;
 }
@@ -142,14 +143,131 @@ table.line thead {
 
 table.line th, table.line td {
 	padding: 10px;
+	text-align: right;
 }
 
-table.line td:nth-child(2), table.line th:nth-child(2){
-	text-align: right;
+table.line td:nth-child(1), table.line th:nth-child(1){
+	text-align: center;
 }
 
 table.line tfoot {
 	font-weight: bold;
 	border-top: 1px solid #a5a5a5;
 	border-bottom: 1px solid #e4e4e4;
+}
+
+/* 회원가입 */
+.join_wrap .join_form {
+	font-size: 12px;
+	vertical-align: middle;
+	margin-top: 10px;
+	width: 100%;
+}
+.join_form .button {
+	border: 1px solid #08a600;
+	background-color: #4ec53d;
+	color: #fff;
+}
+.join_form label{
+	vertical-align: text-top;
+}
+
+.join_form form {
+	padding: 10px 20px;
+	border: 1px solid #e4e4e4;
+	background-color: #fbfbfb;
+}
+
+.join_form input[type], .join_form select, .join_form textarea{
+	border: 1px solid #e4e4e4;
+}
+
+.join_wrap .title{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.join_form .title {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.join_form .input {
+	margin-top: 8px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	height: 28px;
+}
+
+.join_form .input_wrap {
+	margin-top: 8px;
+	width: 100%;
+	height: 28px;
+}
+
+
+.input_wrap.birthday .select_wrap{
+	display: inline-block;
+	width: 33.33%;
+	height: 100%;
+    box-sizing: border-box;
+}
+
+.input_wrap.birthday select {
+	width: 100%;
+	height: 100%;
+}
+
+.input_wrap.gender li {
+	display: inline-block;
+	width: 50%;
+	height: 12px;
+}
+
+.input_wrap #mobile-number {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 12px;
+}
+
+.input_wrap.mobile {
+	position: relative;
+}
+
+.input_wrap.mobile .mobile_number_wrap{
+	padding-right: 210px;
+	height: 100%;
+}
+.input_wrap.mobile #mobile-number{
+	font-size: 12px;
+	width: 100%;
+}
+.input_wrap.mobile .confirm_button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	width: 200px;
+	height: 100%;
+}
+
+.input_wrap.hobby li{
+	display: inline-block;
+	width: 12.5%;
+}
+
+.join_form .info {
+	margin-top: 8px;
+	width: 100%;
+	height: 150px;
+}
+
+.join_form #join{
+	font-size: 16px;
+	width: 100%;
+	margin-top: 20px;
+	height: 30px;
 }
