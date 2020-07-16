@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, input {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video, input {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -94,6 +94,11 @@ h2 {
 	background-color: #fbfbfb;
 }
 
+.content_wrap h4 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
 .content {
 	margin-top: 20px;
 	border: 1px solid #e4e4e4;
@@ -270,4 +275,62 @@ table.line tfoot {
 	width: 100%;
 	margin-top: 20px;
 	height: 30px;
+}
+
+.dic_wrap .result_wrap{
+	margin-top: 4px;
+	border: 1px solid #e4e4e4;
+	padding: 30px 20px;
+}
+
+.dic_wrap .header {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dic_wrap .body dt {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.dic_wrap .body dd {
+	font-size: 12px;
+}
+
+.dic_wrap .body dt em {
+	font-size: 12px;
+	color: #559bfa;
+	font-weight: normal;
+}
+
+.rank_wrap .list {
+	padding: 10px 20px;
+	border: 1px solid #e4e4e4;
+}
+.rank_wrap .item {
+	margin: 10px 0;
+}
+
+.rank_wrap .num {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	border: 1px solid #e0e0e0;
+	font-size: 10px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-align: center;
+}
+.rank_wrap .text {
+	margin-left: 2px;
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+}
+
+.rank_wrap .text:hover {
+	text-decoration: underline;
 }
