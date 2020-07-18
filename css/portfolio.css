@@ -98,6 +98,7 @@ h2 {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 20px;
+	margin-bottom: 10px;
 }
 .content {
 	margin-top: 20px;
@@ -333,4 +334,82 @@ table.line tfoot {
 
 .rank_wrap .text:hover {
 	text-decoration: underline;
+}
+
+.info_list {
+	padding: 10px 30px;
+	border: 1px solid #e4e4e4;
+	list-style: disc;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.info_list em, .info_list a {
+	color: #559bfa;
+}
+
+.info_list strong {
+	color: #ec5336;
+}
+
+.news_list {
+	border: 1px solid #e4e4e4;
+	padding: 0 20px;
+}
+
+.news_list .news_item{
+	padding: 16px 0;
+}
+
+.news_list .news_item:not(:first-child){
+	border-top: 1px solid #e4e4e4;
+}
+
+.news_list .news_item:after {
+	display: block;
+	content:'';
+	clear: both;
+}
+
+.news_list .news_image{
+	float: left;
+	margin-right: 10px;
+}
+
+.news_list .news_content a {
+	font-size: 14px;
+	line-height: 16px;
+	color: #0000cc;
+	font-weight: bold;
+}
+
+.news_list .news_content p {
+	margin-top: 3px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/* .webtoon_list .webtoon_item:last-child:after{
+	display: block;
+	content: '';
+	clear: both;
+} */
+.webtoon_list .webtoon_item {
+	float: left;
+	margin: 10px;
+}
+
+.webtoon_item .webtoon_title{
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.webtoon_item .webtoon_title:hover{
+	text-decoration: underline;
+}
+
+.webtoon_item .webtoon_content{
+	font-size: 12px;
 }
