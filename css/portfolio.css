@@ -62,13 +62,11 @@ header {
 }
 
 header ul {
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 }
 
 header li {
-	-ms-flex: 1;
 	flex: 1;
 	line-height: 20px;
 	border: solid 1px #a5a5a5;
