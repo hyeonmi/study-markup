@@ -392,10 +392,15 @@ table.line tfoot {
 	line-height: 16px;
 }
 .webtoon_list {
-	overflow: hidden;
 	max-width: 915px;
 	border: 1px solid #e4e4e4;
 	padding: 20px 1px 10px 20px;
+}
+
+.webtoon_list:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .webtoon_list .webtoon_item {
