@@ -49,7 +49,9 @@ table {
 /** reset end **/
 
 .wrap {
+	width: 980px;
 	margin: 10px 50px;
+	box-sizing: border-box;
 }
 h1 {
 	font-size: 30px;
@@ -72,6 +74,7 @@ header li {
 	border: solid 1px #a5a5a5;
 	text-align: center;
 	vertical-align: middle;
+	padding: 5px 0;
 }
 
 header li:nth-child(2n){
@@ -293,11 +296,13 @@ table.line tfoot {
 .dic_wrap .body dt {
 	margin-top: 20px;
 	font-size: 14px;
+	line-height: 18px;
 	font-weight: bold;
 }
 
 .dic_wrap .body dd {
 	font-size: 12px;
+	line-height: 16px;
 }
 
 .dic_wrap .body dt em {
@@ -388,21 +393,23 @@ table.line tfoot {
 	font-size: 12px;
 	line-height: 16px;
 }
+.webtoon_list {
+	overflow: hidden;
+	max-width: 915px;
+	border: 1px solid #e4e4e4;
+	padding: 20px 1px 10px 20px;
+}
 
-/* .webtoon_list .webtoon_item:last-child:after{
-	display: block;
-	content: '';
-	clear: both;
-} */
 .webtoon_list .webtoon_item {
 	float: left;
-	margin: 10px;
+	margin: 0 20px 10px 0;
 }
 
 .webtoon_item .webtoon_title{
 	color: #000;
 	font-size: 14px;
 	font-weight: bold;
+	line-height: 18px;
 	text-decoration: none;
 }
 
@@ -412,4 +419,29 @@ table.line tfoot {
 
 .webtoon_item .webtoon_content{
 	font-size: 12px;
+	line-height: 16px;
+}
+
+.green_label {
+	display: inline-block;
+	border: 1px solid #71b036;
+	background-color: #80c83d;
+	font-size: 10px;
+	line-height: 10px;
+	color: #fff;
+	padding: 2px 5px 1px;
+	margin-right: 3px;
+	vertical-align: text-top;
+}
+
+.red_label {
+	display: inline-block;
+	border: 1px solid #df4e28;
+	background-color: #ec5336;
+	font-size: 10px;
+	line-height: 10px;
+	color: #fff;
+	padding: 2px 5px 1px;
+	margin-right: 3px;
+	vertical-align: text-top;
 }
