@@ -4,14 +4,13 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -46,61 +45,64 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /** reset end **/
 
 .wrap {
-	width: 980px;
-	margin: 10px 50px;
-	box-sizing: border-box;
-}
-h1 {
-	font-size: 30px;
+	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+	padding: 10px 50px;
 }
 
 header {
-	margin: 20px auto;
+	min-width: 980px;
+	margin-top: 20px;
+}
+
+footer {
+	min-width: 980px;
+	height: 100px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: solid 1px #e4e4e4;
+	color: #a5a5a5;
+	font-size: 12px;
+	text-align: center;
 }
 
 header ul {
 	display: flex;
-	justify-content: center;
 }
 
 header li {
 	flex: 1;
-	line-height: 20px;
 	border: solid 1px #a5a5a5;
 	text-align: center;
-	vertical-align: middle;
-	padding: 5px 0;
+	padding: 10px 0;
 }
 
 header li:nth-child(2n){
 	margin: 0 4px;
 }
 
-h2 {
-	font-size: 20px;
-	font-weight: bold;
+.container {
+	width: 980px;
+}
+
+.container .main_title {
     border-bottom: 1px solid;
     padding-bottom: 8px;
 }
 
-.content_wrap h3{
+.content .main_title{
 	border-bottom: 1px solid #e4e4e4;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 40px;
-	padding-left: 10px;
+	padding: 0 0 10px 10px;
 	background-color: #fbfbfb;
 }
 
-.content_wrap h4 {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
+.content .subtitle {
 	margin-bottom: 10px;
 }
+
 .content {
 	margin-top: 20px;
 	border: 1px solid #e4e4e4;
@@ -109,14 +111,15 @@ h2 {
 	margin: 20px;
 }
 
-table {
+.table {
 	width: 100%;
 	margin: 0 0 10px;
 	font-size: 12px;
 	color: #555;
 	text-align: center;
 }
-table caption {
+
+.table_caption {
 	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: bold;
@@ -124,40 +127,31 @@ table caption {
 	text-align: left;
 }
 
-table.normal {
-	border: 1px solid #e4e4e4;
-}
-
-table.normal thead {
+.normal .table_header {
 	background-color: #fbfbfb;
 }
 
-table.normal th {
-	font-weight: bold;
-}
-
-table.normal th, table.normal td {
+.normal th, .normal td {
 	border: 1px solid #e4e4e4;
 	padding: 10px;
-	vertical-align: middle;
 }
 
-table.line thead {
+.line .table_header {
 	background-color: #fbfbfb;
 	border-top: 2px solid #a5a5a5;
 	border-bottom: 1px solid #e4e4e4;
 }
 
-table.line th, table.line td {
+.line th, .line td {
 	padding: 10px;
 	text-align: right;
 }
 
-table.line td:nth-child(1), table.line th:nth-child(1){
+.line td:first-child, .line th:first-child{
 	text-align: center;
 }
 
-table.line tfoot {
+.line .table_footer {
 	font-weight: bold;
 	border-top: 1px solid #a5a5a5;
 	border-bottom: 1px solid #e4e4e4;
@@ -189,7 +183,7 @@ table.line tfoot {
 	border: 1px solid #e4e4e4;
 }
 
-.join_wrap .title{
+.join_form .title{
 	font-size: 14px;
 	font-weight: bold;
 }

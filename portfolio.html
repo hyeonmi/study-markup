@@ -5,8 +5,7 @@
         <link rel="stylesheet" href="./css/portfolio.css">
         <title>포트폴리오</title>
     </head>
-    <body>
-    <div class="wrap">
+    <body class="wrap">
         <h1>포트폴리오</h1>
         <header>
             <ul>
@@ -16,32 +15,32 @@
             </ul>
         </header>
         <section class="container">
-            <h2>구성요소</h2>
+            <h2 class="main_title">구성요소</h2>
             <div class="content_wrap">
                 <div class="content">
-                    <h3>테이블 요소</h3>
+                    <h3 class="main_title">테이블 요소</h3>
                     <div class="content_body">
-                    <table class="normal">
-                        <caption>아동 사이즈</caption>
+                    <table class="table normal">
+                        <caption class="table_caption">아동 사이즈</caption>
                         <colgroup>
                             <col span="9">
                         </colgroup>
-                        <thead>
+                        <thead class="table_header">
                             <tr>
-                                <th colspan="2">구분</th>
-                                <th colspan="2">Small</th>
-                                <th colspan="2">Medium</th>
-                                <th colspan="2">Large</th>
+                                <th scope="col" colspan="2">구분</th>
+                                <th scope="col" colspan="2">Small</th>
+                                <th scope="col" colspan="2">Medium</th>
+                                <th scope="col" colspan="2">Large</th>
                                 <th>X-Large</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th rowspan="3">
+                                <th scope="row" rowspan="3">
                                     미국남아<br>
                                     [Boys 2-7]
                                 </th>
-                                <th>사이즈</th>
+                                <th scope="row">사이즈</th>
                                 <td>2T</td>
                                 <td>3T</td>
                                 <td>4T</td>
@@ -51,7 +50,7 @@
                                 <td>7</td>
                             </tr>
                             <tr>
-                                <th>키</th>
+                                <th scope="row">키</th>
                                 <td>84-91</td>
                                 <td>91-99</td>
                                 <td>91-99</td>
@@ -61,7 +60,7 @@
                                 <td>122-130</td>
                             </tr>
                             <tr>
-                                <th>몸무게</th>
+                                <th scope="row">몸무게</th>
                                 <td>13-15</td>
                                 <td>14-15</td>
                                 <td>13-15</td>
@@ -71,11 +70,11 @@
                                 <td>23-25</td>
                             </tr>
                             <tr>
-                                <th rowspan="3">
+                                <th scope="row" rowspan="3">
                                     미국 여아<br>
                                     [Girls 2-6X]
                                 </th>
-                                <td><em>사이즈</em></td>
+                                <th scope="row">사이즈</td>
                                 <td>2T</td>
                                 <td>3T</td>
                                 <td>4T</td>
@@ -85,7 +84,7 @@
                                 <td>6x</td>
                             </tr>
                             <tr>
-                                <td><em>키</em></td>
+                                <th scope="row">키</td>
                                 <td>84-91</td>
                                 <td>91-99</td>
                                 <td>91-99</td>
@@ -95,7 +94,7 @@
                                 <td>122-130</td>
                             </tr>
                             <tr>
-                                <td><em>몸무게</em></td>
+                                <th scope="row">몸무게</th>
                                 <td>13-15</td>
                                 <td>14-15</td>
                                 <td>13-15</td>
@@ -107,17 +106,17 @@
                         </tbody>
                     </table>
 
-                    <table class="line">
-                        <caption>환불 가능 금액 조회</caption>
+                    <table class="table line">
+                        <caption class="table_caption">환불 가능 금액 조회</caption>
                         <colgroup>
                             <col span="4">
                         </colgroup>
-                        <thead>
+                        <thead class="table_header">
                             <tr>
-                                <th>구분</th>
-                                <th>환불가능금액</th>
-                                <th>수수료</th>
-                                <th>총 환불금액</th>
+                                <th scope="col">구분</th>
+                                <th scope="col">환불가능금액</th>
+                                <th scope="col">수수료</th>
+                                <th scope="col">총 환불금액</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -140,7 +139,7 @@
                                 <td>8,500원</td>
                             </tr>
                         </tbody>
-                        <tfoot>
+                        <tfoot class="table_footer">
                             <tr>
                                 <td>총합계</td>
                                 <td>119,000원</td>
@@ -153,9 +152,9 @@
                 </div>
 
                 <div class="content">
-                    <h3>폼요소</h3>
+                    <h3 class="main_title">폼요소</h3>
                     <div class="content_body join_wrap">
-                        <h4 class="title">회원가입</h4>
+                        <h4 class="subtitle">회원가입</h4>
                         <div class="join_form">
                             <form action="test.html">
                                 <label for="user-id" class="title">아이디</label>
@@ -250,7 +249,7 @@
                 </div>
 
                 <div class="content">
-                    <h3>리스트 요소</h3>
+                    <h3 class="main_title">리스트 요소</h3>
                     <div class="content_body dic_wrap">
                         <h4>'프로젝트'사전 검색 결과</h4>
                         <div class="result_wrap">
@@ -410,7 +409,7 @@
             </div>
         </section>
         <footer>
+            <p>Copyright ⓒ NAVER Corp. All Rights Reserved.</p>
         </footer>
-    </div>
     </body>
 </html>
