@@ -1,55 +1,45 @@
 @charset "utf-8";
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
+/** reset start **/
+body,
+h1, h2, h3, h4, h5, h6, 
+ol, ul, dl, dd, p, fieldset {
+	margin:0;
+	padding:0;
 }
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
+table, th, td {
 	border-collapse: collapse;
-	border-spacing: 0;
+}
+em {
+	font-style: normal;
+}
+a {
+	color:inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+img{
+	vertical-align: top;
+}
+
+fieldset {
+	border: 0px;
+}
+
+body, input, textarea, select, button {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 }
 
 /** reset end **/
 
 .wrap {
-	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 	padding: 10px 50px;
 }
 
@@ -65,7 +55,6 @@ footer {
 	padding-top: 20px;
 	border-top: solid 1px #e4e4e4;
 	color: #a5a5a5;
-	font-size: 12px;
 	text-align: center;
 }
 
@@ -90,12 +79,12 @@ header li:nth-child(2n){
 
 .container .main_title {
     border-bottom: 1px solid;
-    padding-bottom: 8px;
+    padding: 8px 0;
 }
 
 .content .main_title{
 	border-bottom: 1px solid #e4e4e4;
-	padding: 0 0 10px 10px;
+	padding: 10px;
 	background-color: #fbfbfb;
 }
 
@@ -114,7 +103,6 @@ header li:nth-child(2n){
 .table {
 	width: 100%;
 	margin: 0 0 10px;
-	font-size: 12px;
 	color: #555;
 	text-align: center;
 }
@@ -159,7 +147,6 @@ header li:nth-child(2n){
 
 /* 회원가입 */
 .join_wrap .join_form {
-	font-size: 12px;
 	vertical-align: middle;
 	margin-top: 10px;
 	width: 100%;
@@ -183,22 +170,16 @@ header li:nth-child(2n){
 	border: 1px solid #e4e4e4;
 }
 
-.join_form .title{
-	font-size: 14px;
-	font-weight: bold;
-}
-
 .join_form .title {
+	font-size: 12px;
 	display: block;
 	margin-top: 10px;
-	font-size: 14px;
 	font-weight: bold;
 }
 
 .join_form .input {
 	margin-top: 8px;
 	width: 100%;
-	font-size: 12px;
 	line-height: 20px;
 	height: 28px;
 }
@@ -231,7 +212,6 @@ header li:nth-child(2n){
 .input_wrap #mobile-number {
 	box-sizing: border-box;
 	height: 100%;
-	font-size: 12px;
 }
 
 .input_wrap.mobile {
@@ -243,7 +223,6 @@ header li:nth-child(2n){
 	height: 100%;
 }
 .input_wrap.mobile #mobile-number{
-	font-size: 12px;
 	width: 100%;
 }
 .input_wrap.mobile .confirm_button{
@@ -292,13 +271,7 @@ header li:nth-child(2n){
 	font-weight: bold;
 }
 
-.dic_wrap .body dd {
-	font-size: 12px;
-	line-height: 16px;
-}
-
 .dic_wrap .body dt em {
-	font-size: 12px;
 	color: #559bfa;
 	font-weight: normal;
 }
@@ -324,20 +297,12 @@ header li:nth-child(2n){
 }
 .rank_wrap .text {
 	margin-left: 2px;
-	text-decoration: none;
-	color: #000;
-	font-size: 12px;
-}
-
-.rank_wrap .text:hover {
-	text-decoration: underline;
 }
 
 .info_list {
 	padding: 10px 30px;
 	border: 1px solid #e4e4e4;
 	list-style: disc;
-	font-size: 12px;
 	line-height: 20px;
 }
 
@@ -382,8 +347,6 @@ header li:nth-child(2n){
 
 .news_list .news_content p {
 	margin-top: 3px;
-	font-size: 12px;
-	line-height: 16px;
 }
 .webtoon_list {
 	max-width: 915px;
@@ -403,20 +366,9 @@ header li:nth-child(2n){
 }
 
 .webtoon_item .webtoon_title{
-	color: #000;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 18px;
-	text-decoration: none;
-}
-
-.webtoon_item .webtoon_title:hover{
-	text-decoration: underline;
-}
-
-.webtoon_item .webtoon_content{
-	font-size: 12px;
-	line-height: 16px;
 }
 
 .green_label {
